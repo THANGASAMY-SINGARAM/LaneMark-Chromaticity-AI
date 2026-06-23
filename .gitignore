@@ -1,14 +1,28 @@
+# Python cache and tooling
 __pycache__/
 *.py[cod]
 *.pyo
 .Python
 .pytest_cache/
 .mypy_cache/
+.ruff_cache/
+.coverage*
+htmlcov/
 
+# Environments
 venv/
 .venv/
 env/
+ENV/
+.env
+.envrc
 
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Local datasets and generated computer-vision outputs
 train/
 test/
 yolo_dataset/
@@ -19,13 +33,17 @@ outputs_yolo/
 *.onnx
 *.engine
 
+# Logs
 *.log
 pip_req_log*.txt
 tail_pip_req_log.txt
 pip_install_complete_log.txt
 install_log.txt
 
+# Local app/secrets/editor files
 .streamlit/secrets.toml
 .agents/
+.vscode/
+.idea/
 .DS_Store
 Thumbs.db
