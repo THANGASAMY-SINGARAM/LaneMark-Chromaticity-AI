@@ -72,6 +72,15 @@ st.markdown(
         border-radius: 8px;
         padding: 12px 14px;
     }
+    div[data-testid="stMetric"] label,
+    div[data-testid="stMetric"] p,
+    div[data-testid="stMetric"] [data-testid="stMetricLabel"],
+    div[data-testid="stMetric"] [data-testid="stMetricValue"] {
+        color: #111827 !important;
+    }
+    div[data-testid="stMetric"] [data-testid="stMetricDelta"] {
+        color: #374151 !important;
+    }
     section[data-testid="stSidebar"] div[data-testid="stVerticalBlock"] {gap: 0.7rem;}
     h1, h2, h3 {letter-spacing: 0;}
     </style>
